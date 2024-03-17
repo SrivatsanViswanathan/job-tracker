@@ -31,7 +31,7 @@ if (process.env.NODE_ENV) {
   app.use(morgan('dev'));
 }
 
-app.use(express.static(path.resolve(__dirname, './public')));
+app.use(express.static(path.resolve(__dirname, './client/dist')));
 app.use(cookieParser());
 app.use(express.json());
 
@@ -49,7 +49,7 @@ app.use('/api/v1/users', authenticateUser, userRouter);
 app.use('/api/v1/auth', authRouter);
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './public', 'index.html'));
+  res.sendFile(path.resolve(__dirname, './client/disc', 'index.html'));
 });
 
 // Request not found error
