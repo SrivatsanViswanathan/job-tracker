@@ -34,7 +34,6 @@ export const authorizePermissions = (...roles) => {
 
 // Check if the user is a test user
 export const checkforTestUser = (req, res, next) => {
-  console.log(req.user.testUser);
   if (req.user.testUser) {
     throw new BadRequestError('Demo User. Read Only!');
   }

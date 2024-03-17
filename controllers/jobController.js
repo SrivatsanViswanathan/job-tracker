@@ -100,7 +100,6 @@ export const showStats = async (req, res, next) => {
     acc[title] = count;
     return acc;
   }, {});
-  console.log(stats);
   const defaultStats = {
     pending: stats.pending || 0,
     interview: stats.itnerview || 0,
