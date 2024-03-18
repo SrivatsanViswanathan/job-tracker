@@ -2,7 +2,7 @@
 
 A web application where the user can register, login, and add jobs they have applied for. They can update the job status (pending, interview, declined) as the process moves foreward.
 
-Link: https://job-tracker-1ks3.onrender.com/dashboard
+Link: https://job-tracker-1ks3.onrender.com
 
 The application was uploaded on Render with the Free Plan. It may take a while to load as the site will be down . It will take around 1 minute to spin up.
 
