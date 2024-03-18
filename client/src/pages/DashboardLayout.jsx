@@ -6,7 +6,13 @@ import {
   useNavigation,
 } from 'react-router-dom';
 import DashboardCSS from '../assets/styled-components/DashboardCSS';
-import { BigSideBar, Navbar, SmallSideBar, Loading } from '../components';
+import {
+  BigSideBar,
+  Navbar,
+  SmallSideBar,
+  Loading,
+  Header,
+} from '../components';
 import { createContext, useContext, useEffect, useState } from 'react';
 import { checkDefaultTheme } from '../App';
 import customFetch from '../utils/customFetch';

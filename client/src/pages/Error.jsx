@@ -1,6 +1,7 @@
 import { Link, useRouteError } from 'react-router-dom';
 import ErrorCSS from '../assets/styled-components/ErrorCSS';
 import img from '../assets/images/not-found.svg';
+import { Header } from '../components';
 
 const Error = () => {
   const error = useRouteError();
@@ -10,6 +11,7 @@ const Error = () => {
   if (error.status === 404) {
     return (
       <ErrorCSS>
+        <Header title='Error' description='Error'></Header>
         <div>
           <img src={img} alt='not found' />
           <h3>Ohh! Page not found</h3>

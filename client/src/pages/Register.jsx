@@ -1,6 +1,6 @@
 import { Form, redirect, Link } from 'react-router-dom';
 import RegisterCSS from '../assets/styled-components/RegisterCSS';
-import { FormRow, Logo, SubmitBtn } from '../components';
+import { FormRow, Header, Logo, SubmitBtn } from '../components';
 import customFetch from '../utils/customFetch';
 import { toast } from 'react-toastify';
 
@@ -20,6 +20,10 @@ export const registerAction = async ({ request }) => {
 const Register = () => {
   return (
     <RegisterCSS>
+      <Header
+        title='Register'
+        description='Create your account to tack your job application progress'
+      ></Header>
       <Form method='post' className='form'>
         <Logo></Logo>
         <h4>Register</h4>

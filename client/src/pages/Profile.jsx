@@ -1,4 +1,4 @@
-import { FormRow, SubmitBtn } from '../components';
+import { FormRow, Header, SubmitBtn } from '../components';
 import DashboardFormPageCSS from '../assets/styled-components/DashboardFormPageCSS';
 import {
   useOutletContext,
@@ -8,7 +8,6 @@ import {
 } from 'react-router-dom';
 import customFetch from '../utils/customFetch';
 import { toast } from 'react-toastify';
-import { QueryClient } from '@tanstack/react-query';
 
 export const profileAction =
   (queryClient) =>
@@ -37,6 +36,10 @@ const Profile = () => {
   const { name, lastName, email, location } = user;
   return (
     <DashboardFormPageCSS>
+      <Header
+        title='Profile'
+        description='View your profile and update your credentials'
+      ></Header>
       <Form method='post' className='form' encType='multipart/form-data'>
         <h4 className='form-title'>profile</h4>
         <div className='form-center'>

@@ -3,7 +3,7 @@ import { useLoaderData, redirect } from 'react-router-dom';
 import customFetch from '../utils/customFetch';
 import StatsContainerCSS from '../assets/styled-components/StatsContainerCSS';
 import { toast } from 'react-toastify';
-import { StatItem } from '../components';
+import { Header, StatItem } from '../components';
 
 export const adminLoader = async () => {
   try {
@@ -19,6 +19,10 @@ const Admin = () => {
   const { users, jobs } = useLoaderData();
   return (
     <StatsContainerCSS>
+      <Header
+        title='Admin'
+        description='See data about your users and jobs'
+      ></Header>
       <StatItem
         title='current users'
         count={users}

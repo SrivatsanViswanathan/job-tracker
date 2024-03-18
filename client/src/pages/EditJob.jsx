@@ -1,4 +1,4 @@
-import { FormRow, FormRowSelect, SubmitBtn } from '../components';
+import { FormRow, FormRowSelect, Header, SubmitBtn } from '../components';
 import DashboardFormPageCSS from '../assets/styled-components/DashboardFormPageCSS';
 import { useLoaderData, Form, redirect, useParams } from 'react-router-dom';
 import { JOB_STATUS, JOB_TYPE } from '../../../utils/constants';
@@ -51,6 +51,7 @@ const EditJob = () => {
   } = useQuery(singleJobQuery(id));
   return (
     <DashboardFormPageCSS>
+      <Header title='Edit Job' description='Update the job details'></Header>
       <Form method='post' className='form'>
         <h4 className='form-title'>edit job</h4>
         <div className='form-center'>

@@ -6,6 +6,10 @@ import main from '../assets/images/target.svg';
 const Landing = () => {
   return (
     <LandingCSS>
+      <Header
+        title='Home'
+        description='Manage your job search process'
+      ></Header>
       <nav>
         <Logo></Logo>
       </nav>
@@ -16,9 +20,10 @@ const Landing = () => {
               job <span>tracking</span> app
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-              earum in recusandae magni qui magnam. Blanditiis voluptate iste ut
-              assumenda!
+              Manage your job search process. Track job applications, update
+              application statuses, and organize your job search with ease. Stay
+              on top of your career goals by efficiently managing your job
+              application pipeline.
             </p>
             <Link to='/register' className='btn register-link'>
               Register

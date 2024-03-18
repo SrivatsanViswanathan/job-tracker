@@ -1,11 +1,6 @@
-import { FormRow, FormRowSelect, SubmitBtn } from '../components';
+import { FormRow, FormRowSelect, Header, SubmitBtn } from '../components';
 import DashboardFormPageCSS from '../assets/styled-components/DashboardFormPageCSS';
-import {
-  useRouteError,
-  Form,
-  redirect,
-  useOutletContext,
-} from 'react-router-dom';
+import { Form, redirect, useOutletContext } from 'react-router-dom';
 import { JOB_STATUS, JOB_TYPE } from '../../../utils/constants';
 import { toast } from 'react-toastify';
 import customFetch from '../utils/customFetch';
@@ -30,6 +25,10 @@ const AddJob = () => {
   const { user } = useOutletContext();
   return (
     <DashboardFormPageCSS>
+      <Header
+        title='Add Job'
+        description='Add new job listings to your dashboard'
+      ></Header>
       <Form method='post' className='form'>
         <h4 className='form-title'>add job</h4>
         <div className='form-center'>

@@ -1,6 +1,6 @@
 import { Link, Form, redirect, useNavigate } from 'react-router-dom';
 import LoginCSS from '../assets/styled-components/LoginCSS';
-import { FormRow, Logo, SubmitBtn } from '../components';
+import { FormRow, Header, Logo, SubmitBtn } from '../components';
 import customFetch from '../utils/customFetch';
 import { toast } from 'react-toastify';
 
@@ -38,6 +38,10 @@ const Login = () => {
   };
   return (
     <LoginCSS>
+      <Header
+        title='Login'
+        description='Access your account or explore the app with a demo account'
+      ></Header>
       <Form method='post' className='form'>
         <Logo></Logo>
         <h4>Login</h4>
