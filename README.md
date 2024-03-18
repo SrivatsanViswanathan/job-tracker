@@ -4,6 +4,8 @@ A web application where the user can register, login, and add jobs they have app
 
 Link: https://job-tracker-1ks3.onrender.com/dashboard
 
+The application was uploaded on Render with the Free Plan. It may take a while to load as the site will be down . It will take around 1 minute to spin up.
+
 ## Tools Used
 
 - Implemented with Javascript
