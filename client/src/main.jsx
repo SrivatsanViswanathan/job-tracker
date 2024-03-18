@@ -14,8 +14,8 @@ async function fetchData() {
 fetchData();
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <>
     <App />
     <ToastContainer position='top-center' autoClose={1500}></ToastContainer>
-  </React.StrictMode>
+  </>
 );

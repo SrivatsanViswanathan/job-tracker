@@ -43,6 +43,9 @@ const LoginCSS = styled.section`
     padding: 5px;
     cursor: pointer;
   }
+  .eye {
+    color: var(--text-color);
+  }
 `;
 
 export default LoginCSS;

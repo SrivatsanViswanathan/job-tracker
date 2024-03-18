@@ -4,6 +4,8 @@ import * as dotenv from 'dotenv';
 import morgan from 'morgan';
 import mongoose from 'mongoose';
 import cloudinary from 'cloudinary';
+import helmet from 'helmet';
+import mongoSanitize from 'express-mongo-sanitize';
 
 // Custom Imports
 import jobRouter from './routes/jobRouter.js';
@@ -34,11 +36,8 @@ if (process.env.NODE_ENV) {
 app.use(express.static(path.resolve(__dirname, './client/dist')));
 app.use(cookieParser());
 app.use(express.json());
-
-app.get('/', (req, res) => {
-  res.send('Hello World');
-});
-
+app.use(helmet());
+app.use(mongoSanitize());
 app.get('/api/v1/test', (req, res) => {
   res.json({ message: 'test route' });
 });
