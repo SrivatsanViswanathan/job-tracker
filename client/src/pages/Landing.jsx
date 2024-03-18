@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Logo } from '../components';
+import { Header, Logo } from '../components';
 import LandingCSS from '../assets/styled-components/LandingCSS';
 import main from '../assets/images/target.svg';
 
